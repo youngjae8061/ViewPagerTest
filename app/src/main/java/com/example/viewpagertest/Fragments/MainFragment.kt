@@ -25,7 +25,8 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        txtMain.text = "Fragment Main"
+        txtMain.text = "콘티넨탈 코리아에 오신 것을 환영합니다!"
+        txtSub.text = "콘티넨탈 코리아 어플리케이션은\n보도자료, 채용, 지속 가능성, 사옵본부 소개 및 제품 정보 등\n회사에 대한 정보가 모여 있는 허브입니다."
     }
 
     companion object {

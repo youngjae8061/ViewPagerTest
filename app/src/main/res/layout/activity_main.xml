@@ -10,10 +10,11 @@
     <View
         android:id="@+id/line"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="7dp"
         android:background="#000000"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="83dp" />
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgConti"
+        app:layout_constraintBottom_toTopOf="@id/imgConti" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mVP2"
@@ -44,7 +45,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#F57F17"
+        android:background="#FFA500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
