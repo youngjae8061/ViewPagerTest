@@ -8,7 +8,7 @@
     <item
         android:id="@+id/menuIntro"
         android:icon="@drawable/ic_introduce"
-        android:title="회사소개"/>
+        android:title="사업소개"/>
     <item
         android:id="@+id/menuHire"
         android:icon="@drawable/ic_hire"

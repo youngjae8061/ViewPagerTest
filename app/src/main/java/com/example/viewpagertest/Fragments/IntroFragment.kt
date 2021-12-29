@@ -24,7 +24,6 @@ class IntroFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        txtIntro.text = "Fragment Intro"
     }
 
     companion object {

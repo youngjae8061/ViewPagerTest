@@ -11,9 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.viewpagertest.Adapters.MenuBottomAdapter
-import com.example.viewpagertest.Fragments.HireFragment
-import com.example.viewpagertest.Fragments.IntroFragment
-import com.example.viewpagertest.Fragments.MainFragment
+import com.example.viewpagertest.Fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

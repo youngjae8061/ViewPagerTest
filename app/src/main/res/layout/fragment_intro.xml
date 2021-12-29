@@ -1,15 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.IntroFragment">
 
-    <TextView
-        android:id="@+id/txtIntro"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtDescript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text='"콘티넨탈은 신뢰할 수 있는 파트너로서\n안전하고 편안하며 지속가능한\n경제적 맞춤형 솔루션을 제공합니다."'
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="혁신"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescript"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtIntro"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg2"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtIntro"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/txtSubIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="사업본부"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img2"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg3"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubIntro"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg4"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubIntro"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg5"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtSubIntro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="제품 포트폴리오"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img5"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/introeimg6"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubIntro2"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

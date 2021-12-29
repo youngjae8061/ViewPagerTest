@@ -1,15 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.HireFragment">
 
-    <TextView
-        android:id="@+id/txtHire"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txtDescript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text='"콘티넨탈은 영감을 주고, 개방적이며,\n성과에 적절한 보상을 하는 기업문화를 만들어 갑니다."'            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtHire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="채용안내"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescript"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="220sp"
+            android:layout_height="180sp"
+            android:src="@drawable/hireimg"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHire"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/hireimg2"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHire"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/hireimg3"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtHire2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="콘티넨탈의 일하는 방식"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img3"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="220sp"
+            android:layout_height="180sp"
+            android:src="@drawable/hireimg4"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHire2"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/hireimg5"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHire2"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/hireimg6"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img4"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/hireimg7"
+            android:scaleType="fitXY"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="8sp"
+            android:background="@drawable/shape_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img4"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
