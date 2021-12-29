@@ -17,13 +17,12 @@ class MainActivity : AppCompatActivity() {
         val fragments: ArrayList<Fragment> = arrayListOf(
             Page1Fragment(),
             Page2Fragment(),
-            Page3Fragment()
+            Page3Fragment(),
+            Page4Fragment(),
+            Page5Fragment()
         )
 
         val adapter = ViewPagerAdapter(fragments, this)
         viewPager.adapter = adapter
-
     }
-
-
 }
